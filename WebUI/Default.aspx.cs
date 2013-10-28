@@ -18,6 +18,11 @@ public partial class _Default : System.Web.UI.Page
             //try to save myPerson to database
             myPerson.Create();
         }
-        catch (Exception err) { string errReport = "Failed trying to save user"; errReport += err.Message; System.Diagnostics.Debug.Write(errReport); }
+        catch (Exception err) { 
+            string errReport = "Failed trying to save user";
+            errReport += err.Message; 
+         //   System.Diagnostics.Debug.Write(errReport);
+            Response.Write(errReport);
+        }
     }
 }

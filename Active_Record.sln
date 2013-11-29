@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebUI(3)", "http://localhost:3749", "{AC8A750E-0751-41F9-B05E-EC150643BC71}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebUI(1)", "http://localhost:3749", "{AC8A750E-0751-41F9-B05E-EC150643BC71}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{2fa43dec-c17c-4616-b3cd-d6e0c12f938a}|TechInfoSystems.Data.SQLiteProvider.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_3749"
 		Debug.AspNetCompiler.PhysicalPath = "WebUI\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3749\"
@@ -23,13 +26,22 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebUI(3)", "http://localhos
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteProvider", "SQLiteProvider\SQLiteProvider.csproj", "{2FA43DEC-C17C-4616-B3CD-D6E0C12F938A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AC8A750E-0751-41F9-B05E-EC150643BC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC8A750E-0751-41F9-B05E-EC150643BC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8A750E-0751-41F9-B05E-EC150643BC71}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8A750E-0751-41F9-B05E-EC150643BC71}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2FA43DEC-C17C-4616-B3CD-D6E0C12F938A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA43DEC-C17C-4616-B3CD-D6E0C12F938A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA43DEC-C17C-4616-B3CD-D6E0C12F938A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA43DEC-C17C-4616-B3CD-D6E0C12F938A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

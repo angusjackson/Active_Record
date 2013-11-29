@@ -10,7 +10,30 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <asp:Repeater ID="rpProjects" runat="server">
+            <HeaderTemplate>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>项目</th>
+                            <th>描述</th>
+                            <th>创建日期</th>
+                        </tr>
+                    </thead>
+                    <tbody>            
+            </HeaderTemplate>
+            <ItemTemplate>
+                <tr>
+                    <td><%#Eval("Title") %></td>
+                    <td><%#Eval("Description") %></td>
+                    <td><%#Eval("AddedDate","{0:d}") %></td>
+                    </tr>
+            </ItemTemplate>
+            <FooterTemplate>
+                </tbody>    
+                </table>
+            </FooterTemplate>
+        </asp:Repeater>
     </div>
     </form>
 </body>

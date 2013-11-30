@@ -7,7 +7,7 @@
             //get the settings from web.config
             Castle.ActiveRecord.Framework.IConfigurationSource source = Castle.ActiveRecord.Framework.Config.ActiveRecordSectionHandler.Instance;
             //register your objects with ActiveRecord
-            Castle.ActiveRecord.ActiveRecordStarter.Initialize(source, new Type[] { typeof(Person), typeof(Project), typeof(Bug) });
+            Castle.ActiveRecord.ActiveRecordStarter.Initialize(source, new Type[] { typeof(Project), typeof(Bug) });
         
 
     }
